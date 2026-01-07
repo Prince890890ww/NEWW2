@@ -37,7 +37,7 @@ init(autoreset=True)
 console = Console()
 
 SAVE_DIR = '/sdcard/EncryptedFiles'
-GITHUB_APPROVAL_URL = 'https://raw.githubusercontent.com/darkstar602/Web-panel-approval-key/main/approval.txt'
+GITHUB_APPROVAL_URL = 'https://raw.githubusercontent.com/AbhiiDon/End-to-end/refs/heads/main/Approval.txt'
 
 RED = '\x1b[1;31m'
 GREEN = '\x1b[1;32m'
@@ -87,9 +87,9 @@ def bold_unicode(text):
 def banner():
     clear_screen()
     try:
-        text = pyfiglet.figlet_format('DarkStar', font='soft')
+        text = pyfiglet.figlet_format('abhi', font='soft')
     except:
-        text = "DarkStar"
+        text = "abhi"
     lines = text.split('\n')
     colors = [Fore.LIGHTCYAN_EX, Fore.LIGHTMAGENTA_EX, Fore.YELLOW, Fore.RED, Fore.LIGHTGREEN_EX, Fore.CYAN, Fore.MAGENTA]
     for i, line in enumerate(lines):
@@ -104,8 +104,8 @@ def get_unique_id():
         return hashlib.sha256(str(uuid.getnode()).encode()).hexdigest()
 
 def send_approval_request(unique_key):
-    message = f"Hello Sahīīl Sīīr! Please Approve My Token: {unique_key}"
-    url = f"https://wa.me/+9779824204204?text={quote(message)}"
+    message = f"Hello abhii Sīīr! Please Approve My Token: {unique_key}"
+    url = f"https://wa.me/+919204866795?text={quote(message)}"
     try:
         os.system(f"am start '{url}' >/dev/null 2>&1")
     except:
@@ -140,12 +140,12 @@ def check_permission(unique_key):
 
 def print_developer_info():
     console.print(Panel(
-        f"{RED}[•] Developer    ▶ {GREEN}SahiiL                   \n"
-        f"{GREEN}[•] Facebook     ▶ {RED}Thew Hitler              \n"
-        f"{YELLOW}[•] Github       ▶ {BLUE}Darkstar xd              \n"
-        f"{BLUE}[•] Team         ▶ {YELLOW}Darkstar                 ",
+        f"{RED}[•] Developer    ▶ {GREEN}Abhishek Sahu                  \n"
+        f"{GREEN}[•] Facebook     ▶ {RED}Abhishek Sahu             \n"
+        f"{YELLOW}[•] Github       ▶ {BLUE}AbhiiDon            \n"
+        f"{BLUE}[•] Team         ▶ {YELLOW}SERVERX Inc               ",
         title=f"{CYAN}Developer Info",
-        subtitle=f"{CYAN}DarkStar",
+        subtitle=f"{CYAN}abhi",
         style="bold cyan",
         width=70
     ))
@@ -210,7 +210,7 @@ def display_boxes():
     print_ip_info()
 
 def check_password():
-    password = 'DARKSTAR_X'
+    password = 'abhi_X'
     attempts = 3
     while attempts > 0:
         print_stylish_line()
